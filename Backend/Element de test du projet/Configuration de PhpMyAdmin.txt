@@ -1,0 +1,16 @@
+******************FICHIER EXCELL*******************
+
+ETAPE 1
+-------
+
+Il faut s'assurer que votre PhpMyAdmin est bien confifuré pour importer les données d'un fichier excell
+pour ça il faut aller dans l'interface de XAMP puis cliquer à l'onglet config de APACHE  ensuite choisir
+le fichier
+ 
+config.inc.php
+
+ETAPE 2 
+-------
+ 
+Ouvrir le fichier dans un editeur de text
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test des routes</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<div class="container mt-5">
+    <h1>Liste des routes à tester</h1>
+        <div>
+            <h2>ADMIN</h2>
+            <a  class="btn btn-success mb-3" href="">UPLOAD COUPON</a>
+            <a class="btn btn-success mb-3" href="">UPDATE STUDENT PAYEMENT</a>
+            <a class="btn btn-primary mb-3" href="">SEND MAIL</a>
+            <a class="btn btn-primary mb-3" href="">NEWS LETTER</a>
+        </div><hr><br>
+        <div>
+            <h2>NEWS</h2>
+            <a  class="btn btn-success mb-3" href="">Paiement</a>
+            <a class="btn btn-success mb-3" href="">Up load PDF</a>
+            <a class="btn btn-primary mb-3" href="">Up Load CSV</a>
+        </div>
+        <div>
+          <h2>STUDENT</h2>
+          <a  class="btn btn-success mb-3" href="">Paiement</a>
+          <a class="btn btn-success mb-3" href="">Up load PDF</a>
+          <a class="btn btn-primary mb-3" href="">Up Load CSV</a>
+      </div>
+
+    <div>
+      <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+  </div><br><br>
+
+
+  <div>
+    <style>
+        body {
+          background-color: #f8f9fa;
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .card {
+          width: 400px;
+        }
+      </style>
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title text-center mb-4">Connexion</h3>
+          
+          <form action="/api/auth/login" method="post">
+            <div class="form-group">
+              <label for="adressemail">adresse mail</label>
+              <input type="email" class="form-control" id="adressemail" name="adressemail" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Mot de passe</label>
+              <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Se connecter</button>
+          </form>
+          
+          <div class="text-center mt-3">
+            <a href="">Mot de passe oublié ?</a>
+          </div>
+          <div class="text-center mt-3">
+            <a href="/api/auth/register">Creer compte</a>
+          </div>
+        </div>
+      </div><br><br>
+    
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </div>

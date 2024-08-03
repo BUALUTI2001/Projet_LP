@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test des routes</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <style>
+    body {
+      background-color: #f8f9fa;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card {
+      width: 400px;
+    }
+  </style>
+  <div class="container mt-5">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <div>
+      <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+  </div><br><br>
+
+
+
+    <h1 class="text-center">Liste des routes à tester</h1>
+        <div>
+            
+            <a  class="btn btn-success mb-3" href="/auth/loginForm/">LOGIN</a><br>
+            <div>
+              <h4>UPLODER LES ETUDIANTS VIA EXCELL + INITIALISATION DE LA DATABE  </h4><br>
+              <form action="/admin/uploadStudents" method="post" enctype="multipart/form-data">
+                <input type="file" value="***" name="listeExcelEtudiant">
+                <button type="submit" class="btn btn-success mb-3" >IMPORTER LES ETUDIANTS ET INITIALISER LA DB</button>
+                <a  class="btn btn-success mb-3" href="/admin/students/">VOIR RESULTAT UPLOD</a>
+              </form>
+              
+            </div><hr>
+            <div>
+              <h2>UPLODER COUPON DANS LA DATABASE</h2><br>
+              <form action="/admin/uploadManyCoupon" method="post" enctype="multipart/form-data">
+                <input type="file" value="***" name="coupon" multiple>
+                <button type="submit" class="btn btn-primary mb-3" >UPLODER LES COUPONS</button>
+                <a  class="btn btn-success mb-3" href="/admin/getCoupon/">VOIR COUPON UPLOADé</a>
+              </form>
+            </div>
+            <div><br><hr>
+              <h2>UPLODER LES COURS DANS LA DATABASE</h2><br>
+              <form action="/admin/uploadCours" method="post" enctype="multipart/form-data">
+                <input type="file" value="***" name="cours" multiple>
+                <button type="submit" class="btn btn-primary mb-3" >UPLODER LES COURS</button>
+                <a  class="btn btn-success mb-3" href="">VOIR COURS UPLOAD</a>
+              </form>
+            </div>
+            <div><br><hr>
+              <h2>METTRE A JOUR LES PAIEMENT VIA EXCELL</h2><br>
+              <form action="/admin/validerPaiement" method="post" enctype="multipart/form-data">
+                <input type="file" value="***" name="paiement" multiple>
+                <button type="submit" class="btn btn-primary mb-3" >UPLODER FICHE PAIE</button>
+                <a  class="btn btn-success mb-3" href="">VOIR TABLE DE PAIEMENT</a>
+              </form>
+              <a class="btn btn-success mb-3" href="">VALIDER LE PAIEMENT PAR BOUTON</a>
+            </div><br><hr>
+            <a class="btn btn-primary mb-3" href="">Envoyer MAIL</a>
+        </div><hr><br>
+        <div>
+            <h2>NEWS</h2>
+            <a  class="btn btn-success mb-3" href="">Publier un news</a>
+            <a class="btn btn-success mb-3" href="">CRUD sur le news</a>
+            
+        </div><hr><br>
+        <div>
+        
+        <h2>PAIEMENT</h2>
+        
+        <a  class="btn btn-success mb-3" href="">Voir Liste des paie</a>
+        
+        <a class="btn btn-primary mb-3" href="">Mis à jour par excell</a>
+    </div><hr><br> 
+      <div>
+        <h2>COMPTE</h2>
+        <a  class="btn btn-success mb-3" href="">login</a>
+        <a class="btn btn-success mb-3" href="">Reset Password</a>
+        <a class="btn btn-success mb-3" href="">Creer un compte</a>
+        <a class="btn btn-primary mb-3" href="">Modifier son profil</a>
+    </div><hr><br>
+
+  <div>
+    
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title text-center mb-4">Connexion</h3>
+          
+          <form action="/admin/login" method="post">
+            <div class="form-group">
+              <label for="email">adresse mail</label>
+              <input type="email" class="form-control" id="email" name="AdresseMail" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Mot de passe</label>
+              <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Se connecter</button>
+          </form>
+          
+          <div class="text-center mt-3">
+            <a href="">Mot de passe oublié ?</a>
+          </div>
+          <div class="text-center mt-3">
+            <a href="">Creer compte</a>
+          </div>
+        </div>
+      </div><br><br>
+    
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </div>
+</body>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJOUTER UN ETUDIANT</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="my-4">AJOUTER ETUDIANT</h2>
+    <form action="/admin/students/create" method="post">
+      <div class="form-group">
+        <label for="lastName">Nom</label>
+        <input type="text" name="Nom" class="form-control" id="lastName" placeholder="Entrez le nom de l'étudiant">
+      </div>
+      <div class="form-group">
+        <label for="firstName">Post Nom</label>
+        <input type="text" name="PostNom" class="form-control" id="firstName" placeholder="" >
+      </div>
+      <div class="form-group">
+        <label for="firstName">Prénom</label>
+        <input type="text" name="Prenom" class="form-control" id="firstName" placeholder="" >
+      </div>
+      <div class="form-group">
+        <label for="firstName">statut</label>
+        <input type="text" name="Statut" class="form-control" id="firstName" placeholder="" >
+      </div>
+      <div class="form-group">
+        <label for="firstName">sexe</label>
+        <input type="text" name="Sexe" class="form-control" id="firstName" placeholder="" >
+      </div>
+      
+      <div class="form-group">
+        <label for="firstName">Promotion</label>
+        <input type="text" name="Promotion" class="form-control" id="firstName" placeholder="" >
+      </div>
+    
+      <button type="submit" class="btn btn-primary">Ajouter</button>
+    </form>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
